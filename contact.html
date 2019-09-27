@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>INDUS HOTEL | EXPERIENCE THE BEST</title>
+    <style>
+      body {
+        text-align: center;
+        line-height: 2;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        background-image: url("img/ty.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top;
+        background-attachment: fixed;
+      }
+      h1 {
+        color: rgb(25, 144, 199);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 90px;
+        font-weight: bold;
+        margin-top: inherit;
+        font-style: oblique;
+        animation-name: move-right;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+      }
+      .p1 {
+        color: rgb(11, 81, 114);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        animation-name: move-left;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Thank you!</h1>
+      <p class="p1">Your submission has been received...</p>
+      <p class="p1">We will contact you as soon as possible....</p>
+      <span id="timer"></span>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script type="text/javascript">
+      var count = 8;
+      var redirect = "index.html";
+      function countDown() {
+        var timer = document.getElementById("timer");
+        if (count > 0) {
+          count--;
+
+          setTimeout("countDown()", 1000);
+        } else {
+          window.location.href = redirect;
+        }
+      }
+      countDown();
+    </script>
+
+    <footer style="position: relative">
+      <div class="footer">
+        <p>indus hotels and resorts &trade; <br />copyright reserved &reg;</p>
+      </div>
+    </footer>
+  </body>
+</html>
